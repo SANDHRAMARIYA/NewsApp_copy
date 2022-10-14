@@ -13,7 +13,7 @@ export class NewsappComponent implements OnInit {
   }
 
 
-
+status:boolean=false
 
 
 
@@ -24,6 +24,7 @@ export class NewsappComponent implements OnInit {
     this.myapi.viewData().subscribe(
       (data)=>{
         this.newsdata=data
+        this.status=true
       }
     )
   }
